@@ -10,7 +10,7 @@ EndFunc
 
 If _PSsixLoadH("12TailsTH") Then WinActivate($GameHD)
 MsgBox("","UMI","นายท่านต้องการเริ่มเปิดบอทหรือไม่?หากต้องการให้กดOK")	
-
+;WinActivate("[CLASS:SciTEWindow]")
 While 1
 $control = ControlGetFocus($GameHD)
 ControlFocus($GameHD, Default, $control)
@@ -24,9 +24,9 @@ EndIf
 
 $COLOR_B = PixelSearch( 517, 263 ,726, 395 ,0x668077)  
 If Not @error Then
-ControlClick($GameHD, "", "","right",8,614, 312)
-ControlClick($GameHD, "", "","right",8,645, 313)
-ControlClick($GameHD, "", "","right",8,602, 313)
+ControlClick($GameHD, "", "$control","right",8,614, 312)
+ControlClick($GameHD, "", "$control","right",8,645, 313)
+ControlClick($GameHD, "", "$control","right",8,602, 313)
 Sleep(10)
 EndIf
 
@@ -55,85 +55,168 @@ ControlClick($GameHD, "", "","right",8,622, 380)
 ControlClick($GameHD, "", "","right",8,636, 376)
 EndIf
 
-$COLOR_G = PixelSearch(16, 7,1265, 635,0x22549F)  
+$COLOR_G = PixelSearch(13, 20,1260, 623,0xA8DEFF)  
 If Not @error Then
 ControlSend($GameHD, Default, $control, "{SPACE}")
 ControlSend($GameHD, Default, $control, "1")
-ControlSend($GameHD, Default, $control, "{a down}")
-ControlSend($GameHD, Default, $control, "{d down}")
 ControlSend($GameHD , Default, $control, "{w down}")
 ControlSend($GameHD, Default, $control, "{SPACE}")
 
 ControlSend($GameHD, Default, $control, "{SPACE}")
 ControlSend($GameHD, Default, $control, "2")
-ControlSend($GameHD, Default, $control, "{a down}")
-ControlSend($GameHD, Default, $control, "{d down}")
 ControlSend($GameHD, Default, $control, "{w down}")
 ControlSend($GameHD, Default, $control, "{SPACE}")
 
 ControlSend($GameHD, Default, $control, "{SPACE}")
 ControlSend($GameHD, Default, $control, "3")
-
-ControlSend($GameHD, Default, $control, "{a down}")
-ControlSend($GameHD, Default, $control, "{d down}")
 ControlSend($GameHD, Default, $control, "{w down}")
 
 ControlSend($GameHD, Default, $control, "{SPACE}")
 ControlSend($GameHD, Default, $control, "4")
-ControlSend($GameHD, Default, $control, "{a down}")
-ControlSend($GameHD, Default, $control, "{d down}")
 ControlSend($GameHD, Default, $control, "{w down}")
 ControlSend($GameHD, Default, $control, "{SPACE}")
 
 ControlSend($GameHD, Default, $control, "{SPACE}")
 ControlSend($GameHD, Default, $control, "5")
-ControlSend($GameHD, Default, $control, "{a down}")
-ControlSend($GameHD, Default, $control, "{d down}")
 ControlSend($GameHD, Default, $control, "{w down}")
 ControlSend($GameHD, Default, $control, "{SPACE}")
 
 ControlSend($GameHD, Default, $control, "{SPACE}")
 ControlSend($GameHD, Default, $control, "6")
-ControlSend($GameHD, Default, $control, "{a down}")
-ControlSend($GameHD, Default, $control, "{d down}")
 ControlSend($GameHD, Default, $control, "{w down}")
 ControlSend($GameHD, Default, $control, "{SPACE}")
 
 ControlSend($GameHD, Default, $control, "{SPACE}")
 ControlSend($GameHD, Default, $control, "7")
-ControlSend($GameHD, Default, $control, "{a down}")
-ControlSend($GameHD, Default, $control, "{d down}")
 ControlSend($GameHD, Default, $control, "{w down}")
 ControlSend($GameHD, Default, $control, "{SPACE}")
 
 ControlSend($GameHD, Default, $control, "{SPACE}")
 ControlSend($GameHD, Default, $control, "8")
 
-ControlSend($GameHD, Default, $control, "{a down}")
-ControlSend($GameHD, Default, $control, "{d down}")
 ControlSend($GameHD, Default, $control, "{w down}")
 ControlSend($GameHD, Default, $control, "{SPACE}")
 
 ControlSend($GameHD, Default, $control, "{SPACE}")
 ControlSend($GameHD, Default, $control, "9")
 
-ControlSend($GameHD, Default, $control, "{a down}")
-ControlSend($GameHD, Default, $control, "{d down}")
 ControlSend($GameHD, Default, $control, "{w down}")
 ControlSend($GameHD, Default, $control, "{SPACE}")
 
 ControlSend($GameHD, Default, $control, "{SPACE}")
 ControlSend($GameHD, Default, $control, "0")
 
-ControlSend($GameHD, Default, $control, "{a down}")
-ControlSend($GameHD, Default, $control, "{d down}")
+
 ControlSend($GameHD, Default, $control, "{w down}")
 ControlSend($GameHD, Default, $control, "{SPACE}")
 
 
 EndIf
 
+$COLOR_G = PixelSearch(13, 20,1260, 623,0x7A482A)  
+If Not @error Then
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "1")
+ControlSend($GameHD , Default, $control, "{s down}")
+ControlSend($GameHD, Default, $control, "{SPACE}")
 
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "2")
+ControlSend($GameHD, Default, $control, "{s down}")
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "3")
+ControlSend($GameHD, Default, $control, "{s down}")
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "4")
+ControlSend($GameHD, Default, $control, "{s down}")
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "5")
+ControlSend($GameHD, Default, $control, "{s down}")
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "6")
+ControlSend($GameHD, Default, $control, "{s down}")
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "7")
+ControlSend($GameHD, Default, $control, "{s down}")
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "8")
+ControlSend($GameHD, Default, $control, "{s down}")
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "9")
+
+ControlSend($GameHD, Default, $control, "{s down}")
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "0")
+
+ControlSend($GameHD, Default, $control, "{s down}")
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+EndIf
+
+$COLOR_G = PixelSearch(14, 18,184, 142,0xF70705)  
+If Not @error Then
+ControlSend($GameHD, Default, $control, "1")
+ControlSend($GameHD , Default, $control, "{s down}")
+
+
+ControlSend($GameHD, Default, $control, "2")
+ControlSend($GameHD, Default, $control, "{s down}")
+
+
+
+ControlSend($GameHD, Default, $control, "3")
+
+
+ControlSend($GameHD, Default, $control, "4")
+ControlSend($GameHD, Default, $control, "{s down}")
+
+
+ControlSend($GameHD, Default, $control, "5")
+ControlSend($GameHD, Default, $control, "{s down}")
+
+
+
+ControlSend($GameHD, Default, $control, "6")
+ControlSend($GameHD, Default, $control, "{s down}")
+
+
+
+ControlSend($GameHD, Default, $control, "7")
+ControlSend($GameHD, Default, $control, "{s down}")
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+
+ControlSend($GameHD, Default, $control, "8")
+ControlSend($GameHD, Default, $control, "{s down}")
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "9")
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+ControlSend($GameHD, Default, $control, "0")
+
+
+ControlSend($GameHD, Default, $control, "{SPACE}")
+
+EndIf
 
 $COLOR_H = PixelSearch(361, 181,616, 332,0xD6CE42)  
 If Not @error Then
@@ -143,7 +226,20 @@ ControlClick($GameHD, "", "","right",8,399, 370)
 Sleep(1000)
 ControlClick($GameHD, "", "","right",8,429, 384)
 Sleep(1000)
-
+ControlClick($GameHD, "", "","right",8,372, 377)
+Sleep(1000)
+ControlClick($GameHD, "", "","right",8,399, 370)
+Sleep(1000)
+ControlClick($GameHD, "", "","right",8,429, 384)
+Sleep(1000)
+ControlClick($GameHD, "", "","right",8,372, 377)
+Sleep(1000)
+ControlClick($GameHD, "", "","right",8,399, 370)
+Sleep(1000)
+ControlClick($GameHD, "", "","right",8,429, 384)
+Sleep(1000)
+ControlClick($GameHD, "", "","right",8,385, 550)
+Sleep(3000)
 EndIf
 
 
